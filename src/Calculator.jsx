@@ -26,12 +26,12 @@ const Calculator = () => {
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-900 font-sans">
             <div className="w-87 bg-gray-800 rounded-xl p-6 shadow-2xl shadow-black/40 transform transition-all duration-500 hover:scale-[1.01]">
-                <div className="heading mt-2 mb-3 flex justify-between items-center text-[#3A48A0]">
+                <div className="heading mt-2 mb-3 flex justify-between items-center">
                     <img src="/casio-logo.png" width={115} alt="" />
                     <button onClick={handleOnAndOff} className="relative inline-flex items-center rounded-full cursor-pointer transition-all duration-300 hover:scale-110 active:scale-95">
                         {flag ?
-                            <i className="fa-solid fa-toggle-on text-[40px] transition-transform duration-500 hover:rotate-12 animate-pulse"></i> :
-                            <i className="fa-solid fa-toggle-off text-[40px] transition-transform duration-500 hover:-rotate-12"></i>}
+                            <i className="fa-solid fa-toggle-on text-green-600 text-[40px] transition-transform duration-500 hover:rotate-12 animate-pulse"></i> :
+                            <i className="fa-solid fa-toggle-off text-red-600 text-[40px] transition-transform duration-500 hover:-rotate-12"></i>}
                     </button>
                 </div>
                 <div className="bg-gray-700 h-20 rounded-lg mb-4 flex justify-end items-end p-4 text-white text-3xl font-light overflow-hidden transition-all duration-300 shadow-inner shadow-black/30">{flag ? number : ''}</div>
